@@ -1,0 +1,7 @@
+{
+  "name": "cs54791-final-frontend",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
