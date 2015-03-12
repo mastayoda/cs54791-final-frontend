@@ -2,6 +2,35 @@
   "name": "cs54791-final-frontend",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.2.0"
-  }
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.3",
+    "typehead.js": "~0.10.5"
+  },
+  "version": "1.0.0",
+  "homepage": "https://github.com/mastayoda/cs54791-final-frontend",
+  "authors": [
+    "victor Santos Uceta <victor.uceta@gmail.com>"
+  ],
+  "description": "Frontend web UI for CS54791 final project. The Purdue's Bargains Search Engine.",
+  "main": "app/scripts/main.js",
+  "keywords": [
+    "Search",
+    "Engine",
+    "Solr",
+    "Bargains",
+    "Purdue",
+    "Free",
+    "Sale",
+    "CS54791",
+    "Final",
+    "Project"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

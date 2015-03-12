@@ -9,6 +9,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #FFFFFF;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -43,15 +44,31 @@ body {
   margin: 30px 0;
 }
 
+.engine-tittle{
+  font-family: Impact;
+  font-size: 350%;
+  font-style: italic;
+  -webkit-text-stroke: 1px black;
+  color: #A3792C;
+  text-shadow:
+  3px 3px 0 #000,
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+::selection {
+  background: #FFC328; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FFC328; /* Gecko Browsers */
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-}
-
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
 }
 
 /* Supporting marketing content */
@@ -84,6 +101,7 @@ body {
 
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
+    background-color: #E3AE24;
     border-bottom: 0;
   }
 }

@@ -14,6 +14,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/jquery.typeahead.css">
     <!-- endbuild -->
   </head>
   <body>
@@ -25,17 +26,43 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><img src="images/Book.png" alt="College Icon"/></li>
+          <li><img src="images/Car.png" alt="College Icon"/></li>
+          <li><img src="images/Home.png" alt="College Icon"/></li>
+          <li><img src="images/IPad.png" alt="College Icon"/></li>
+          <li><img src="images/Men-Suit.png" alt="College Icon"/></li>
+          <li><img src="images/Ticket.png" alt="College Icon"/></li>
         </ul>
-        <h3 class="text-muted">cs54791 final frontend</h3>
+        <h3 class="engine-tittle">Boiler Bargains</h3>
       </div>
 
       <div class="jumbotron">
-        <h1>'This is my new app!!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
+        <img src="images/College.png" alt="College Icon"/>
+        <br>
+        <br>
+        <form id=""
+              name=""
+              action="">
+          <div class="typeahead-container">
+            <div class="input-group">
+
+                <span class="typeahead-query">
+                    <input id="q"
+                           name="q"
+                           class="form-control"
+                           type="search"
+                           placeholder="Search"
+                           autocomplete="off">
+                </span>
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-default">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+
+            </div>
+          </div>
+        </form>
       </div>
 
       <div class="row marketing">
@@ -53,7 +80,7 @@
       </div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-gift"></span> Courtesy of some Computer Science Students </p>
       </div>
 
     </div>
@@ -62,6 +89,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/typehead.js/dist/typeahead.bundle.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -91,6 +119,7 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/jquery.typeahead.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
