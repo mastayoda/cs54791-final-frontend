@@ -1,3 +1,4 @@
+$(document).ready(function() {
 
 var data = {
   countries: ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda",
@@ -88,4 +89,16 @@ $('#q').typeahead({
     onSubmit: null
   },
   debug: true
+});
+
+
+  /* Fading in */
+  $('body').fadeIn(function(){
+
+    $('.engine-tittle').effect("bounce", { direction: 'up', distance: 100, times: 4 },1000, function()
+    {
+       $(".typeahead-container").fadeIn();
+    });
+  });
+
 });

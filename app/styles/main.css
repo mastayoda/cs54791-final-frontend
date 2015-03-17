@@ -5,8 +5,14 @@
   padding: 0.2em 0;
 }
 
+@font-face {
+  font-family: sketch;
+  src: url(fonts/FFF_Tusj.ttf);
+}
+
 /* Space out content a bit */
 body {
+  display: none;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #FFFFFF;
@@ -45,24 +51,16 @@ body {
 }
 
 .engine-tittle{
-  font-family: Impact;
-  font-size: 350%;
-  font-style: italic;
-  -webkit-text-stroke: 1px black;
-  color: #A3792C;
-  text-shadow:
-  3px 3px 0 #000,
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
+  font-family: sketch;
+  font-size: 450%;
+
 }
 
 ::selection {
-  background: #FFC328; /* WebKit/Blink Browsers */
+  background: #BFB2A8; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #FFC328; /* Gecko Browsers */
+  background: #BFB2A8; /* Gecko Browsers */
 }
 
 /* Main marketing message and sign up button */
@@ -105,3 +103,9 @@ body {
     border-bottom: 0;
   }
 }
+
+.typeahead-container{
+  display: none;
+}
+
+
