@@ -50,12 +50,6 @@ body {
   margin: 30px 0;
 }
 
-.engine-tittle{
-  font-family: sketch;
-  font-size: 450%;
-
-}
-
 ::selection {
   background: #BFB2A8; /* WebKit/Blink Browsers */
 }
@@ -104,8 +98,26 @@ body {
   }
 }
 
-.typeahead-container{
-  display: none;
+/********************************** MY STYLES *******************************/
+.logoTittleContainer{
+  margin-bottom: 10%;
 }
+
+
+.engine-tittle{
+  font-family: sketch;
+  font-size: 400%;
+  float: right;
+
+}
+
+
+.logo{
+  width: 20%;
+  margin-left: -10%;
+  margin-bottom: 2%;
+}
+
+
 
 
