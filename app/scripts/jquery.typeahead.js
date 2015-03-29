@@ -1036,8 +1036,10 @@
                         // Pass the query to the request if {{query}} is specified
                         if (ajaxObj && ajaxObj.data) {
                             for (var x in ajaxObj.data) {
-                                if (ajaxObj.data[x] === "{{query}}") {
-                                    ajaxObj.data[x] = query;
+                              if(typeof ajaxObj.data[x] == 'string')
+                                if (ajaxObj.data[x].indexOf("{{query}}") > -1) {
+                                  //ajaxObj.data[x] = ajaxObj.data[x].replace("\{\{query\}\}",query);
+                                  ajaxObj.data[x] = ajaxObj.data[x].replace("\{\{query\}\}",encodeURIComponent(query));
                                     break;
                                 }
                             }
@@ -1485,6 +1487,10 @@
         var _highlight = function (string, key) {
             var offset = string.indexOf(key);
 
+            /* truncating 20 characters at each side of the string */
+            string = string.substr((offset - 30)<0?0:(offset - 30), offset + key.length + 30) + "...";
+            offset = string.indexOf(key);
+
             if (offset === -1) {
                 return string;
             }
@@ -1493,7 +1499,7 @@
                 string,
                 offset,
                 key.length,
-                "<strong>" + string.substr(offset, key.length) + "</strong>"
+                "<strong style='color:#E3AE24' >" + string.substr(offset, key.length) + "</strong>"
             );
         }
 
