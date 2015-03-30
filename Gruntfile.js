@@ -118,6 +118,16 @@ module.exports = function (grunt) {
           ]
         }]
       },
+      boilerbargains: {
+        files: [{
+          dot: true,
+          src: [
+            '.tmp',
+            '<%= config.boilerbargains %>/*',
+            '!<%= config.boilerbargains %>/.git*'
+          ]
+        }]
+      },
       server: '.tmp'
     },
 
@@ -381,6 +391,8 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin'
   ]);
+
+
 
   grunt.registerTask('default', [
     'newer:jshint',

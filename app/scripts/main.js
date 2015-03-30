@@ -217,7 +217,7 @@ function getListMarkup(item)
 
                 '<div class="media-left media-left">' +
                   '<a href="#">' +
-                  '<img class="media-object" src="images/IPad.png" alt="...">' +
+                  '<img class="media-object" src="images/icons-stamps/48/Facebook-Icon.png" alt="...">' +
                   '</a>' +
                 '</div>' +
                 '<div class="media-body">' +

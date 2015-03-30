@@ -140,3 +140,9 @@ body {
   padding: 5px;
   border-radius:0px 3px 0px 0px;
 }
+
+.media-object{
+  margin-top: -10px;
+  margin-left: -5px;
+  margin-bottom: 15px;
+}
