@@ -111,13 +111,32 @@ body {
 
 }
 
-
 .logo{
   width: 20%;
   margin-left: -10%;
   margin-bottom: 2%;
 }
 
+.media-heading{
+  font-weight: 300;
+}
 
+.item-date{
 
+  float: right;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 0px 0px 0px 5px;
+}
 
+.item-ranking{
+
+  float: right;
+  height: 100%;
+  background: #E3AE24;
+  color: white;
+  font-weight: 500;
+  font-size: 15pt;
+  padding: 5px;
+  border-radius:0px 3px 0px 0px;
+}
